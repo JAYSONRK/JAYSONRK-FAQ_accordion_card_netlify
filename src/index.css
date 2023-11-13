@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Montserrat:ital,wght@0,500;1,200&family=Open+Sans&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Playpen+Sans:wght@700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@300&family=Rubik:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--Desaturated-blue: hsl(238, 29%, 16%);
+--Soft-red: hsl(14, 88%, 65%);
+--Soft-violet: hsl(273, 75%, 66%);
+--Soft-blue: hsl(240, 73%, 65%);
+--Very-dark-grayish-blue: hsl(237, 12%, 33%);
+--Dark-grayish-blue: hsl(240, 6%, 50%);
+--Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: Kumbh Sans,sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+   
+}
+
+.card {
+  width: 330px;
+  height: 660px;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  margin: 10rem 1.5rem 1.5rem;
+  padding: 0 1.5rem 1.5rem;
+  background: url('./bg-pattern-mobile.svg'),white ;
+  border-radius: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.illustration {
+  text-align: center;
+}
+
+.womenb {
+  width: 230px;
+  transform: translateY(-60%);
+} 
+
+ .box {
+  display: none;
+ }
+
+h1 {
+  transform: translateY(-100%);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.faq {
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.348);
+}
+
+.lighter {
+  font-weight: 100;
+}
+
+p{
+  padding: 0.5rem 0;
+}
+
+.bottomsection:hover {
+  cursor: pointer;
+}
+
+h4:hover, .icon {
+  color:hsl(14, 88%, 65%);
+}
+.attribution { font-size: 11px; text-align: center; color: white; }
+.attribution a { color: hsl(228, 45%, 44%);color: yellow }
+
+@media(min-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 875px;
+    height: 500px;
+    margin: auto;
+    background: url('./bg-pattern-desktop.svg'),white ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 40vw bottom 5vh;
+  }
+  .womenb {
+    width: 400px;
+    height: 330px;
+    transform: translate(-20%, 20%);
+  } 
+  .box {
+    display: block;
+   }
+  .bottomsection {
+    padding: 2rem;
+  }
+
+  h1 {
+    text-align: left;
+    transform: translateY(0);
+    font-size: 2rem;
+  }
+}
